@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- HASSAN IFTIKHAR | Roll No: 274 | Assignment 2 - Information Page (Embedded CSS) -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Schedule and Fees - Bright Future Training Academy</title>
+  <style>
+    /* Element selector */
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f7fb; color: #222; line-height: 1.6; }
+    h1, h2 { color: #1a3a5c; }
+    header { background-color: #1a3a5c; padding: 20px; text-align: center; }
+    header h1 { color: #ffffff; margin: 0; }
+    nav { background-color: #f5a623; padding: 10px; text-align: center; }
+    nav a { color: #1a3a5c; font-weight: bold; margin: 0 15px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 900px; margin: 20px auto; padding: 0 20px; }
+    footer { background-color: #1a3a5c; color: #ffffff; text-align: center; padding: 15px; }
+
+    /* Class selector */
+    .notice { background-color: #fff8d6; border-left: 5px solid #f5a623; padding: 15px; margin: 20px 0; }
+    .box { background-color: #ffffff; border: 1px solid #c9d6e3; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+
+    /* ID selector */
+    #course-table { border-collapse: collapse; width: 100%; background-color: #ffffff; }
+    #course-table caption { font-weight: bold; padding: 10px; color: #1a3a5c; }
+    #course-table th, #course-table td { border: 2px solid #1a3a5c; padding: 10px; text-align: left; }
+    #course-table th { background-color: #1a3a5c; color: #ffffff; }
+
+    /* Attribute selector */
+    audio[controls], video[controls] { display: block; width: 100%; max-width: 480px; margin: 10px 0; border: 2px solid #1a3a5c; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <header><h1>Course Schedule and Fees</h1></header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="information.html">Courses &amp; Fees</a>
+    <a href="registration.html">Register</a>
+  </nav>
+
+  <main>
+    <!-- Self-contained course description -->
+    <article class="box">
+      <h2>Course Spotlight: Web Development</h2>
+      <p>This 12-week course teaches students how to design and build responsive websites using HTML5, CSS3 and JavaScript. Learners complete three hands-on projects and publish a portfolio website online.</p>
+    </article>
+
+    <!-- Related information -->
+    <aside class="notice">
+      <h2>Announcement</h2>
+      <p>Early registration closes on 30 November 2026. Register early and receive a 10% discount.</p>
+    </aside>
+
+    <!-- Schedule table -->
+    <section class="box">
+      <table id="course-table">
+        <caption>Course schedule and fees for the Spring 2027 batch</caption>
+        <thead>
+          <tr><th scope="col">Course</th><th scope="col">Schedule</th><th scope="col">Duration</th><th scope="col">Fee (PKR)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Web Development</td><td>Mon &amp; Wed, 5-7 PM</td><td>12 weeks</td><td>25,000</td></tr>
+          <tr><td>Python Programming</td><td>Tue &amp; Thu, 5-7 PM</td><td>10 weeks</td><td>22,000</td></tr>
+          <tr><td>Graphic Design</td><td>Sat, 10 AM-1 PM</td><td>8 weeks</td><td>18,000</td></tr>
+          <tr><td>Digital Marketing</td><td>Sun, 10 AM-1 PM</td><td>8 weeks</td><td>20,000</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media -->
+    <section class="box">
+      <h2>Listen and Watch</h2>
+      <h3>Welcome message (audio)</h3>
+      <audio controls>
+        <source src="media/welcome.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+      <h3>Academy introduction (video)</h3>
+      <video controls width="480">
+        <source src="media/intro.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+  </main>
+
+  <footer><p>&copy; 2026 Bright Future Training Academy | info@brightfuture.example</p></footer>
+</body>
+</html>

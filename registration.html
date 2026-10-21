@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- HASSAN IFTIKHAR | Roll No: 274 | Assignment 2 - Registration Page (External CSS) -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration - Bright Future Training Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Student Registration</h1></header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="information.html">Courses &amp; Fees</a>
+    <a href="registration.html">Register</a>
+  </nav>
+
+  <main>
+    <p class="notice">Fields marked required must be filled in. Use dummy details for testing.</p>
+
+    <form id="registration-form" action="#" method="get">
+      <!-- Account area -->
+      <fieldset>
+        <legend>Account Details</legend>
+        <p><label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required></p>
+
+        <p><label for="email">Email:</label>
+        <input type="email" id="email" name="email" required></p>
+
+        <p><label for="password">Password (min 8 characters):</label>
+        <input type="password" id="password" name="password" minlength="8" required></p>
+      </fieldset>
+
+      <!-- Personal and course details -->
+      <fieldset>
+        <legend>Course Details</legend>
+        <p><label for="age">Age (16-60):</label>
+        <input type="number" id="age" name="age" min="16" max="60"></p>
+
+        <p><label for="date">Preferred Start Date:</label>
+        <input type="date" id="date" name="start_date"></p>
+
+        <p><label for="course">Course:</label>
+        <select id="course" name="course" required>
+          <option value="">-- Select a course --</option>
+          <option value="web">Web Development</option>
+          <option value="python">Python Programming</option>
+          <option value="design">Graphic Design</option>
+          <option value="marketing">Digital Marketing</option>
+        </select></p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferred Mode</legend>
+        <input type="radio" id="onsite" name="mode" value="onsite" checked>
+        <label for="onsite">On-site</label>
+        <input type="radio" id="online" name="mode" value="online">
+        <label for="online">Online</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Extras</legend>
+        <input type="checkbox" id="laptop" name="laptop" value="yes">
+        <label for="laptop">I need a laptop</label><br>
+        <input type="checkbox" id="certificate" name="certificate" value="yes">
+        <label for="certificate">Send me a certificate</label><br>
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+        <label for="newsletter">Subscribe to newsletter</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="comments">Comments (max 200 characters):</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40" maxlength="200"></textarea>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </main>
+
+  <footer><p>&copy; 2026 Bright Future Training Academy | info@brightfuture.example</p></footer>
+</body>
+</html>
